@@ -2,7 +2,7 @@
 
 All notable changes to `spatie-schema-org` will be documented in this file.
 
-## Unreleased
+## 1.0.0 - 2026-11-24
 
 - Fluent builders generated from Schema.org 30.0: 925 types, 1,529 properties, and 536 enumeration values.
 - JSON-LD values, Serde output, HTML-safe scripts, and CSP nonces.

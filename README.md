@@ -17,11 +17,11 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 
 ## Installation
 
-Requires Rust 1.89 or newer (edition 2024). This crate has not been published to crates.io. Use a Git dependency:
+Requires Rust 1.89 or newer (edition 2024). Add the crate to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-spatie-schema-org = { git = "https://github.com/spatie/schema-org-rust", branch = "main" }
+spatie-schema-org = "1"
 ```
 
 ## Usage

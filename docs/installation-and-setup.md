@@ -5,11 +5,11 @@ weight: 3
 
 Requires Rust 1.89 or newer. The crate uses edition 2024 and has no runtime services or PHP dependencies.
 
-The crate has not been published to crates.io. Add it from Git:
+Add the crate to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-spatie-schema-org = { git = "https://github.com/spatie/schema-org-rust", branch = "main" }
+spatie-schema-org = "1"
 ```
 
 For a local checkout, use a path dependency instead:
