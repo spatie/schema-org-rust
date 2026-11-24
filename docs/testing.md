@@ -1,12 +1,14 @@
 ---
 title: Testing
-weight: 5
+weight: 8
 ---
 
 Run these checks from the package directory:
 
 ```sh
 cargo fmt --all -- --check
+python3 generator/generate.py
+git diff --exit-code -- src/generated.rs tests/vocabulary.rs
 cargo clippy --locked --all-targets --all-features -- -D warnings
 cargo test --locked --all-targets --all-features
 cargo test --locked --doc --all-features

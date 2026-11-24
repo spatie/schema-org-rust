@@ -1,19 +1,22 @@
 [package]
-name = {{crate_name_quoted}}
+name = "spatie-schema-org"
 version = "0.1.0"
 edition = "2024"
 rust-version = "1.89"
-authors = [{{author_quoted}}]
-description = {{description_quoted}}
+authors = ["Freek Van der Herten <freek@spatie.be>"]
+description = "Fluent Schema.org builders and JSON-LD for Rust"
 license = "MIT"
-repository = "https://github.com/{{owner}}/{{repository}}"
-documentation = "https://docs.rs/{{crate_name}}"
+repository = "https://github.com/spatie/schema-org-rust"
+documentation = "https://docs.rs/spatie-schema-org"
 readme = "README.md"
-keywords = ["spatie"]
-categories = ["development-tools"]
-include = ["/src/", "/tests/*.rs", "/build.rs", "/docs/", "/README.md", "/LICENSE.md", "/CHANGELOG.md", "/CONTRIBUTING.md", "/SECURITY.md", "/Cargo.lock"]
+keywords = ["spatie", "schema-org", "json-ld", "structured-data", "seo"]
+categories = ["web-programming", "encoding"]
+include = ["/src/", "/tests/*.rs", "/generator/", "/build.rs", "/docs/", "/README.md", "/LICENSE.md", "/CHANGELOG.md", "/CONTRIBUTING.md", "/SECURITY.md", "/Cargo.lock"]
 
 [dependencies]
+serde = "1"
+serde_json = { version = "1", features = ["preserve_order"] }
+time = { version = "0.3", features = ["parsing"] }
 
 [lints.rust]
 unsafe_code = "forbid"

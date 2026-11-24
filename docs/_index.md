@@ -1,6 +1,6 @@
 ---
 title: v1
-slogan: {{description_quoted}}
-githubUrl: https://github.com/{{owner}}/{{repository}}
+slogan: "Fluent Schema.org builders and JSON-LD for Rust"
+githubUrl: https://github.com/spatie/schema-org-rust
 branch: main
 ---
