@@ -5,7 +5,7 @@ weight: 1
 
 This package provides fluent builders for every Schema.org type and their properties, with JSON-LD output. It is a Rust port of [spatie/schema-org](https://github.com/spatie/schema-org).
 
-The code is generated from Schema.org's 30.0 JSON-LD definitions, the same version used by the PHP package. It includes 925 types, 1,529 property setters, and 536 enumeration values.
+The code is generated from Schema.org's 30.0 JSON-LD definitions. It includes 925 types, 1,529 property setters, and 536 enumeration values.
 
 ```rust
 use spatie_schema_org::{JsonLd, Schema};

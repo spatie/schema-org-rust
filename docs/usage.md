@@ -31,7 +31,7 @@ assert_eq!(business.to_value()["contactPoint"]["areaServed"], "Worldwide");
 
 Clones share the same entity, including later changes. Graphs and multi-typed entities also share their contents when cloned or nested. Builders are single-threaded. Serialize to an owned `serde_json::Value` before sending data across threads. Use identifier references rather than nesting an entity into itself or constructing a nesting cycle.
 
-The API permits every generated property on every entity, matching PHP's flexible custom setters. It does not validate Schema.org domain/range rules. Refer to [schema.org](https://schema.org) and validate the final document with Google's [Rich Results Test](https://search.google.com/test/rich-results).
+The API permits every generated property on every entity. It does not validate Schema.org domain/range rules. Refer to [schema.org](https://schema.org) and validate the final document with Google's [Rich Results Test](https://search.google.com/test/rich-results).
 
 ## Output
 
@@ -62,7 +62,7 @@ book.book_format(BookFormatType::HARDCOVER);
 assert_eq!(book.to_value()["bookFormat"], "https://schema.org/Hardcover");
 ```
 
-Pass dates as ISO 8601 strings or `time::Date` values. `time::OffsetDateTime` values use the PHP package's ATOM format, including timezone offset and whole seconds. Add `time` with its `parsing` feature to your own dependencies when parsing date strings as in this example.
+Pass dates as ISO 8601 strings or `time::Date` values. `time::OffsetDateTime` values include the timezone offset and whole seconds. Add `time` with its `parsing` feature to your own dependencies when parsing date strings as in this example.
 
 ```rust
 # use spatie_schema_org::{JsonLd, Schema};
