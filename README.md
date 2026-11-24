@@ -1,4 +1,4 @@
-# spatie-schema-org
+# A Fluent Builder For Schema.org Types And ld+json Generator
 
 [![Tests](https://img.shields.io/github/actions/workflow/status/spatie/schema-org-rust/ci.yml?branch=main&style=flat-square)](https://github.com/spatie/schema-org-rust/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/spatie/schema-org-rust/blob/main/LICENSE.md)
