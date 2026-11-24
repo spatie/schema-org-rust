@@ -1,7 +1,7 @@
 //! Generated vocabulary coverage; regenerate with generator/generate.py.
 use spatie_schema_org::*;
 #[test]
-fn every_type_has_a_builder_and_collection_accessor() {
+fn type_builders_and_collection_accessors_0() {
     let mut graph = Graph::new();
     let mut multi = MultiTypedEntity::new();
     assert_eq!(
@@ -300,6 +300,11 @@ fn every_type_has_a_builder_and_collection_accessor() {
     assert_eq!(Audience::new().get_type(), "Audience");
     assert_eq!(graph.audience().get_type(), "Audience");
     assert_eq!(multi.audience().get_type(), "Audience");
+}
+#[test]
+fn type_builders_and_collection_accessors_1() {
+    let mut graph = Graph::new();
+    let mut multi = MultiTypedEntity::new();
     assert_eq!(Schema::audio_object().get_type(), "AudioObject");
     assert_eq!(AudioObject::new().get_type(), "AudioObject");
     assert_eq!(graph.audio_object().get_type(), "AudioObject");
@@ -551,6 +556,11 @@ fn every_type_has_a_builder_and_collection_accessor() {
     assert_eq!(BroadcastChannel::new().get_type(), "BroadcastChannel");
     assert_eq!(graph.broadcast_channel().get_type(), "BroadcastChannel");
     assert_eq!(multi.broadcast_channel().get_type(), "BroadcastChannel");
+}
+#[test]
+fn type_builders_and_collection_accessors_2() {
+    let mut graph = Graph::new();
+    let mut multi = MultiTypedEntity::new();
     assert_eq!(Schema::broadcast_event().get_type(), "BroadcastEvent");
     assert_eq!(BroadcastEvent::new().get_type(), "BroadcastEvent");
     assert_eq!(graph.broadcast_event().get_type(), "BroadcastEvent");
@@ -796,6 +806,11 @@ fn every_type_has_a_builder_and_collection_accessor() {
     assert_eq!(Collection::new().get_type(), "Collection");
     assert_eq!(graph.collection().get_type(), "Collection");
     assert_eq!(multi.collection().get_type(), "Collection");
+}
+#[test]
+fn type_builders_and_collection_accessors_3() {
+    let mut graph = Graph::new();
+    let mut multi = MultiTypedEntity::new();
     assert_eq!(Schema::collection_page().get_type(), "CollectionPage");
     assert_eq!(CollectionPage::new().get_type(), "CollectionPage");
     assert_eq!(graph.collection_page().get_type(), "CollectionPage");
@@ -1068,6 +1083,11 @@ fn every_type_has_a_builder_and_collection_accessor() {
     assert_eq!(DanceEvent::new().get_type(), "DanceEvent");
     assert_eq!(graph.dance_event().get_type(), "DanceEvent");
     assert_eq!(multi.dance_event().get_type(), "DanceEvent");
+}
+#[test]
+fn type_builders_and_collection_accessors_4() {
+    let mut graph = Graph::new();
+    let mut multi = MultiTypedEntity::new();
     assert_eq!(Schema::dance_group().get_type(), "DanceGroup");
     assert_eq!(DanceGroup::new().get_type(), "DanceGroup");
     assert_eq!(graph.dance_group().get_type(), "DanceGroup");
@@ -1385,6 +1405,11 @@ fn every_type_has_a_builder_and_collection_accessor() {
     assert_eq!(DrugLegalStatus::new().get_type(), "DrugLegalStatus");
     assert_eq!(graph.drug_legal_status().get_type(), "DrugLegalStatus");
     assert_eq!(multi.drug_legal_status().get_type(), "DrugLegalStatus");
+}
+#[test]
+fn type_builders_and_collection_accessors_5() {
+    let mut graph = Graph::new();
+    let mut multi = MultiTypedEntity::new();
     assert_eq!(
         Schema::drug_pregnancy_category().get_type(),
         "DrugPregnancyCategory"
@@ -1780,6 +1805,11 @@ fn every_type_has_a_builder_and_collection_accessor() {
     assert_eq!(FilmAction::new().get_type(), "FilmAction");
     assert_eq!(graph.film_action().get_type(), "FilmAction");
     assert_eq!(multi.film_action().get_type(), "FilmAction");
+}
+#[test]
+fn type_builders_and_collection_accessors_6() {
+    let mut graph = Graph::new();
+    let mut multi = MultiTypedEntity::new();
     assert_eq!(
         Schema::financial_incentive().get_type(),
         "FinancialIncentive"
@@ -2085,6 +2115,11 @@ fn every_type_has_a_builder_and_collection_accessor() {
         multi.health_aspect_enumeration().get_type(),
         "HealthAspectEnumeration"
     );
+}
+#[test]
+fn type_builders_and_collection_accessors_7() {
+    let mut graph = Graph::new();
+    let mut multi = MultiTypedEntity::new();
     assert_eq!(Schema::health_club().get_type(), "HealthClub");
     assert_eq!(HealthClub::new().get_type(), "HealthClub");
     assert_eq!(graph.health_club().get_type(), "HealthClub");
@@ -2399,6 +2434,11 @@ fn every_type_has_a_builder_and_collection_accessor() {
     assert_eq!(InteractionCounter::new().get_type(), "InteractionCounter");
     assert_eq!(graph.interaction_counter().get_type(), "InteractionCounter");
     assert_eq!(multi.interaction_counter().get_type(), "InteractionCounter");
+}
+#[test]
+fn type_builders_and_collection_accessors_8() {
+    let mut graph = Graph::new();
+    let mut multi = MultiTypedEntity::new();
     assert_eq!(Schema::internet_cafe().get_type(), "InternetCafe");
     assert_eq!(InternetCafe::new().get_type(), "InternetCafe");
     assert_eq!(graph.internet_cafe().get_type(), "InternetCafe");
@@ -2659,6 +2699,11 @@ fn every_type_has_a_builder_and_collection_accessor() {
     assert_eq!(MarryAction::new().get_type(), "MarryAction");
     assert_eq!(graph.marry_action().get_type(), "MarryAction");
     assert_eq!(multi.marry_action().get_type(), "MarryAction");
+}
+#[test]
+fn type_builders_and_collection_accessors_9() {
+    let mut graph = Graph::new();
+    let mut multi = MultiTypedEntity::new();
     assert_eq!(Schema::mass().get_type(), "Mass");
     assert_eq!(Mass::new().get_type(), "Mass");
     assert_eq!(graph.mass().get_type(), "Mass");
@@ -3105,6 +3150,11 @@ fn every_type_has_a_builder_and_collection_accessor() {
     assert_eq!(MedicalTestPanel::new().get_type(), "MedicalTestPanel");
     assert_eq!(graph.medical_test_panel().get_type(), "MedicalTestPanel");
     assert_eq!(multi.medical_test_panel().get_type(), "MedicalTestPanel");
+}
+#[test]
+fn type_builders_and_collection_accessors_10() {
+    let mut graph = Graph::new();
+    let mut multi = MultiTypedEntity::new();
     assert_eq!(Schema::medical_therapy().get_type(), "MedicalTherapy");
     assert_eq!(MedicalTherapy::new().get_type(), "MedicalTherapy");
     assert_eq!(graph.medical_therapy().get_type(), "MedicalTherapy");
@@ -3392,6 +3442,11 @@ fn every_type_has_a_builder_and_collection_accessor() {
     assert_eq!(MusicRelease::new().get_type(), "MusicRelease");
     assert_eq!(graph.music_release().get_type(), "MusicRelease");
     assert_eq!(multi.music_release().get_type(), "MusicRelease");
+}
+#[test]
+fn type_builders_and_collection_accessors_11() {
+    let mut graph = Graph::new();
+    let mut multi = MultiTypedEntity::new();
     assert_eq!(
         Schema::music_release_format_type().get_type(),
         "MusicReleaseFormatType"
@@ -3721,6 +3776,11 @@ fn every_type_has_a_builder_and_collection_accessor() {
     assert_eq!(ParentAudience::new().get_type(), "ParentAudience");
     assert_eq!(graph.parent_audience().get_type(), "ParentAudience");
     assert_eq!(multi.parent_audience().get_type(), "ParentAudience");
+}
+#[test]
+fn type_builders_and_collection_accessors_12() {
+    let mut graph = Graph::new();
+    let mut multi = MultiTypedEntity::new();
     assert_eq!(Schema::park().get_type(), "Park");
     assert_eq!(Park::new().get_type(), "Park");
     assert_eq!(graph.park().get_type(), "Park");
@@ -3984,6 +4044,11 @@ fn every_type_has_a_builder_and_collection_accessor() {
     assert_eq!(PreOrderAction::new().get_type(), "PreOrderAction");
     assert_eq!(graph.pre_order_action().get_type(), "PreOrderAction");
     assert_eq!(multi.pre_order_action().get_type(), "PreOrderAction");
+}
+#[test]
+fn type_builders_and_collection_accessors_13() {
+    let mut graph = Graph::new();
+    let mut multi = MultiTypedEntity::new();
     assert_eq!(Schema::prepend_action().get_type(), "PrependAction");
     assert_eq!(PrependAction::new().get_type(), "PrependAction");
     assert_eq!(graph.prepend_action().get_type(), "PrependAction");
@@ -4322,6 +4387,11 @@ fn every_type_has_a_builder_and_collection_accessor() {
     assert_eq!(RealEstateAgent::new().get_type(), "RealEstateAgent");
     assert_eq!(graph.real_estate_agent().get_type(), "RealEstateAgent");
     assert_eq!(multi.real_estate_agent().get_type(), "RealEstateAgent");
+}
+#[test]
+fn type_builders_and_collection_accessors_14() {
+    let mut graph = Graph::new();
+    let mut multi = MultiTypedEntity::new();
     assert_eq!(
         Schema::real_estate_listing().get_type(),
         "RealEstateListing"
@@ -4672,6 +4742,11 @@ fn every_type_has_a_builder_and_collection_accessor() {
     assert_eq!(ScholarlyArticle::new().get_type(), "ScholarlyArticle");
     assert_eq!(graph.scholarly_article().get_type(), "ScholarlyArticle");
     assert_eq!(multi.scholarly_article().get_type(), "ScholarlyArticle");
+}
+#[test]
+fn type_builders_and_collection_accessors_15() {
+    let mut graph = Graph::new();
+    let mut multi = MultiTypedEntity::new();
     assert_eq!(Schema::school().get_type(), "School");
     assert_eq!(School::new().get_type(), "School");
     assert_eq!(graph.school().get_type(), "School");
@@ -5046,6 +5121,11 @@ fn every_type_has_a_builder_and_collection_accessor() {
         multi.spreadsheet_digital_document().get_type(),
         "SpreadsheetDigitalDocument"
     );
+}
+#[test]
+fn type_builders_and_collection_accessors_16() {
+    let mut graph = Graph::new();
+    let mut multi = MultiTypedEntity::new();
     assert_eq!(Schema::stadium_or_arena().get_type(), "StadiumOrArena");
     assert_eq!(StadiumOrArena::new().get_type(), "StadiumOrArena");
     assert_eq!(graph.stadium_or_arena().get_type(), "StadiumOrArena");
@@ -5330,6 +5410,11 @@ fn every_type_has_a_builder_and_collection_accessor() {
         multi.tourist_information_center().get_type(),
         "TouristInformationCenter"
     );
+}
+#[test]
+fn type_builders_and_collection_accessors_17() {
+    let mut graph = Graph::new();
+    let mut multi = MultiTypedEntity::new();
     assert_eq!(Schema::tourist_trip().get_type(), "TouristTrip");
     assert_eq!(TouristTrip::new().get_type(), "TouristTrip");
     assert_eq!(graph.tourist_trip().get_type(), "TouristTrip");
@@ -5569,6 +5654,11 @@ fn every_type_has_a_builder_and_collection_accessor() {
     assert_eq!(WPFooter::new().get_type(), "WPFooter");
     assert_eq!(graph.wp_footer().get_type(), "WPFooter");
     assert_eq!(multi.wp_footer().get_type(), "WPFooter");
+}
+#[test]
+fn type_builders_and_collection_accessors_18() {
+    let mut graph = Graph::new();
+    let mut multi = MultiTypedEntity::new();
     assert_eq!(Schema::wp_header().get_type(), "WPHeader");
     assert_eq!(WPHeader::new().get_type(), "WPHeader");
     assert_eq!(graph.wp_header().get_type(), "WPHeader");
@@ -5707,7 +5797,7 @@ fn every_type_has_a_builder_and_collection_accessor() {
     assert_eq!(multi.zoo().get_type(), "Zoo");
 }
 #[test]
-fn every_property_maps_to_its_schema_name() {
+fn property_schema_names_0() {
     let mut entity = Schema::thing();
     entity.about("sentinel");
     assert_eq!(
@@ -5959,6 +6049,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("adverseOutcome"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_1() {
+    let mut entity = Schema::thing();
     entity.affected_by("sentinel");
     assert_eq!(
         entity.get_property("affectedBy"),
@@ -6209,6 +6303,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("arrivalGate"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_2() {
+    let mut entity = Schema::thing();
     entity.arrival_platform("sentinel");
     assert_eq!(
         entity.get_property("arrivalPlatform"),
@@ -6459,6 +6557,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("awards"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_3() {
+    let mut entity = Schema::thing();
     entity.away_team("sentinel");
     assert_eq!(
         entity.get_property("awayTeam"),
@@ -6709,6 +6811,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("broadcastSignalModulation"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_4() {
+    let mut entity = Schema::thing();
     entity.broadcast_sub_channel("sentinel");
     assert_eq!(
         entity.get_property("broadcastSubChannel"),
@@ -6959,6 +7065,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("claimInterpreter"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_5() {
+    let mut entity = Schema::thing();
     entity.claim_reviewed("sentinel");
     assert_eq!(
         entity.get_property("claimReviewed"),
@@ -7209,6 +7319,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("cookingMethod"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_6() {
+    let mut entity = Schema::thing();
     entity.copyright_holder("sentinel");
     assert_eq!(
         entity.get_property("copyrightHolder"),
@@ -7459,6 +7573,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("cvdNumTotBeds"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_7() {
+    let mut entity = Schema::thing();
     entity.cvd_num_vent("sentinel");
     assert_eq!(
         entity.get_property("cvdNumVent"),
@@ -7709,6 +7827,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("discount"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_8() {
+    let mut entity = Schema::thing();
     entity.discount_code("sentinel");
     assert_eq!(
         entity.get_property("discountCode"),
@@ -7959,6 +8081,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("elevation"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_9() {
+    let mut entity = Schema::thing();
     entity.eligibility_to_work_requirement("sentinel");
     assert_eq!(
         entity.get_property("eligibilityToWorkRequirement"),
@@ -8209,6 +8335,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("events"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_10() {
+    let mut entity = Schema::thing();
     entity.evidence_level("sentinel");
     assert_eq!(
         entity.get_property("evidenceLevel"),
@@ -8459,6 +8589,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("frequency"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_11() {
+    let mut entity = Schema::thing();
     entity.from_location("sentinel");
     assert_eq!(
         entity.get_property("fromLocation"),
@@ -8709,6 +8843,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("guidelineSubject"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_12() {
+    let mut entity = Schema::thing();
     entity.handling_time("sentinel");
     assert_eq!(
         entity.get_property("handlingTime"),
@@ -8959,6 +9097,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("healthPlanId"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_13() {
+    let mut entity = Schema::thing();
     entity.health_plan_marketing_url("sentinel");
     assert_eq!(
         entity.get_property("healthPlanMarketingUrl"),
@@ -9209,6 +9351,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("includesHealthPlanFormulary"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_14() {
+    let mut entity = Schema::thing();
     entity.includes_health_plan_network("sentinel");
     assert_eq!(
         entity.get_property("includesHealthPlanNetwork"),
@@ -9459,6 +9605,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("isbn"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_15() {
+    let mut entity = Schema::thing();
     entity.isic_v4("sentinel");
     assert_eq!(
         entity.get_property("isicV4"),
@@ -9709,6 +9859,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("legislationCommences"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_16() {
+    let mut entity = Schema::thing();
     entity.legislation_consolidates("sentinel");
     assert_eq!(
         entity.get_property("legislationConsolidates"),
@@ -9959,6 +10113,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("mapType"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_17() {
+    let mut entity = Schema::thing();
     entity.maps("sentinel");
     assert_eq!(
         entity.get_property("maps"),
@@ -10209,6 +10367,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("molecularFormula"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_18() {
+    let mut entity = Schema::thing();
     entity.molecular_weight("sentinel");
     assert_eq!(
         entity.get_property("molecularWeight"),
@@ -10459,6 +10621,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("numberOfLoanPayments"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_19() {
+    let mut entity = Schema::thing();
     entity.number_of_pages("sentinel");
     assert_eq!(
         entity.get_property("numberOfPages"),
@@ -10709,6 +10875,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("pagination"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_20() {
+    let mut entity = Schema::thing();
     entity.parent("sentinel");
     assert_eq!(
         entity.get_property("parent"),
@@ -10959,6 +11129,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("pickupTime"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_21() {
+    let mut entity = Schema::thing();
     entity.play_mode("sentinel");
     assert_eq!(
         entity.get_property("playMode"),
@@ -11209,6 +11383,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("productGroupID"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_22() {
+    let mut entity = Schema::thing();
     entity.product_id("sentinel");
     assert_eq!(
         entity.get_property("productID"),
@@ -11459,6 +11637,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("recipeCuisine"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_23() {
+    let mut entity = Schema::thing();
     entity.recipe_ingredient("sentinel");
     assert_eq!(
         entity.get_property("recipeIngredient"),
@@ -11709,6 +11891,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("requiresSubscription"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_24() {
+    let mut entity = Schema::thing();
     entity.reservation_for("sentinel");
     assert_eq!(
         entity.get_property("reservationFor"),
@@ -11959,6 +12145,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("season"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_25() {
+    let mut entity = Schema::thing();
     entity.season_number("sentinel");
     assert_eq!(
         entity.get_property("seasonNumber"),
@@ -12209,6 +12399,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("sizeSystem"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_26() {
+    let mut entity = Schema::thing();
     entity.skills("sentinel");
     assert_eq!(
         entity.get_property("skills"),
@@ -12459,6 +12653,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("stupidProperty"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_27() {
+    let mut entity = Schema::thing();
     entity.sub_event("sentinel");
     assert_eq!(
         entity.get_property("subEvent"),
@@ -12709,6 +12907,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("tickerSymbol"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_28() {
+    let mut entity = Schema::thing();
     entity.ticket_number("sentinel");
     assert_eq!(
         entity.get_property("ticketNumber"),
@@ -12959,6 +13161,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("underName"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_29() {
+    let mut entity = Schema::thing();
     entity.unit_code("sentinel");
     assert_eq!(
         entity.get_property("unitCode"),
@@ -13209,6 +13415,10 @@ fn every_property_maps_to_its_schema_name() {
         entity.get_property("videoQuality"),
         Some(serde_json::json!("sentinel"))
     );
+}
+#[test]
+fn property_schema_names_30() {
+    let mut entity = Schema::thing();
     entity.volume_number("sentinel");
     assert_eq!(
         entity.get_property("volumeNumber"),
@@ -13356,7 +13566,7 @@ fn every_property_maps_to_its_schema_name() {
     );
 }
 #[test]
-fn every_enumeration_value_is_a_schema_url() {
+fn enumeration_schema_urls_0() {
     assert_eq!(BookFormatType::PAPERBACK, "https://schema.org/Paperback");
     assert_eq!(
         IPTCDigitalSourceEnumeration::COMPOSITE_CAPTURE_DIGITAL_SOURCE,
@@ -13530,6 +13740,9 @@ fn every_enumeration_value_is_a_schema_url() {
         FulfillmentTypeEnumeration::FULFILLMENT_TYPE_PICKUP_IN_STORE,
         "https://schema.org/FulfillmentTypePickupInStore"
     );
+}
+#[test]
+fn enumeration_schema_urls_1() {
     assert_eq!(ItemAvailability::PRE_SALE, "https://schema.org/PreSale");
     assert_eq!(
         ITNonprofitType::IT_MUTUAL_AID_CHARITY,
@@ -13715,6 +13928,9 @@ fn every_enumeration_value_is_a_schema_url() {
         DigitalPlatformEnumeration::MOBILE_WEB_PLATFORM,
         "https://schema.org/MobileWebPlatform"
     );
+}
+#[test]
+fn enumeration_schema_urls_2() {
     assert_eq!(MedicalSpecialty::ENDOCRINE, "https://schema.org/Endocrine");
     assert_eq!(
         MedicalTrialDesign::INTERNATIONAL_TRIAL,
@@ -13897,6 +14113,9 @@ fn every_enumeration_value_is_a_schema_url() {
         USNonprofitType::NONPROFIT501C13,
         "https://schema.org/Nonprofit501c13"
     );
+}
+#[test]
+fn enumeration_schema_urls_3() {
     assert_eq!(
         HealthAspectEnumeration::PREVENTION_HEALTH_ASPECT,
         "https://schema.org/PreventionHealthAspect"
@@ -14079,6 +14298,9 @@ fn every_enumeration_value_is_a_schema_url() {
         "https://schema.org/Dermatologic"
     );
     assert_eq!(MedicalSpecialty::GENETIC, "https://schema.org/Genetic");
+}
+#[test]
+fn enumeration_schema_urls_4() {
     assert_eq!(
         EventStatusType::EVENT_CANCELLED,
         "https://schema.org/EventCancelled"
@@ -14261,6 +14483,9 @@ fn every_enumeration_value_is_a_schema_url() {
         MedicalTrialDesign::TRIPLE_BLINDED_TRIAL,
         "https://schema.org/TripleBlindedTrial"
     );
+}
+#[test]
+fn enumeration_schema_urls_5() {
     assert_eq!(
         PaymentStatusType::PAYMENT_DUE,
         "https://schema.org/PaymentDue"
@@ -14431,6 +14656,9 @@ fn every_enumeration_value_is_a_schema_url() {
         MedicalTrialDesign::OPEN_TRIAL,
         "https://schema.org/OpenTrial"
     );
+}
+#[test]
+fn enumeration_schema_urls_6() {
     assert_eq!(
         ReturnMethodEnumeration::RETURN_AT_KIOSK,
         "https://schema.org/ReturnAtKiosk"
@@ -14607,6 +14835,9 @@ fn every_enumeration_value_is_a_schema_url() {
         "https://schema.org/MerchantReturnUnspecified"
     );
     assert_eq!(PhysicalExam::LUNG, "https://schema.org/Lung");
+}
+#[test]
+fn enumeration_schema_urls_7() {
     assert_eq!(
         WearableSizeGroupEnumeration::WEARABLE_SIZE_GROUP_BIG,
         "https://schema.org/WearableSizeGroupBig"
@@ -14792,6 +15023,9 @@ fn every_enumeration_value_is_a_schema_url() {
         ItemAvailability::ONLINE_ONLY,
         "https://schema.org/OnlineOnly"
     );
+}
+#[test]
+fn enumeration_schema_urls_8() {
     assert_eq!(
         OrderStatus::ORDER_IN_TRANSIT,
         "https://schema.org/OrderInTransit"
@@ -14980,6 +15214,9 @@ fn every_enumeration_value_is_a_schema_url() {
         HealthAspectEnumeration::GETTING_ACCESS_HEALTH_ASPECT,
         "https://schema.org/GettingAccessHealthAspect"
     );
+}
+#[test]
+fn enumeration_schema_urls_9() {
     assert_eq!(
         ReservationStatusType::RESERVATION_HOLD,
         "https://schema.org/ReservationHold"
@@ -15153,6 +15390,9 @@ fn every_enumeration_value_is_a_schema_url() {
         HealthAspectEnumeration::CAUSES_HEALTH_ASPECT,
         "https://schema.org/CausesHealthAspect"
     );
+}
+#[test]
+fn enumeration_schema_urls_10() {
     assert_eq!(
         WearableSizeSystemEnumeration::WEARABLE_SIZE_SYSTEM_MX,
         "https://schema.org/WearableSizeSystemMX"

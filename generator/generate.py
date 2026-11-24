@@ -81,19 +81,27 @@ def generate():
             out += [f'/// Get or create a shared handle to the default `{name}` node.', f'pub fn {snake(name)}(&mut self) -> Entity {{ {ensure} }}']
         out += ['}']
     smoke = ['//! Generated vocabulary coverage; regenerate with generator/generate.py.',
-             'use spatie_schema_org::*;',
-             '#[test]', 'fn every_type_has_a_builder_and_collection_accessor() {',
-             'let mut graph = Graph::new();', 'let mut multi = MultiTypedEntity::new();']
-    for name in names.values():
+             'use spatie_schema_org::*;']
+    # Keep function bodies small enough for rustfmt's stack on Windows.
+    for index, name in enumerate(names.values()):
+        if index % 50 == 0:
+            if index:
+                smoke += ['}']
+            smoke += ['#[test]', f'fn type_builders_and_collection_accessors_{index // 50}() {{',
+                      'let mut graph = Graph::new();', 'let mut multi = MultiTypedEntity::new();']
         smoke += [f'assert_eq!(Schema::{snake(name)}().get_type(), "{name}");',
                   f'assert_eq!({name}::new().get_type(), "{name}");',
                   f'assert_eq!(graph.{snake(name)}().get_type(), "{name}");',
                   f'assert_eq!(multi.{snake(name)}().get_type(), "{name}");']
-    smoke += ['}', '#[test]', 'fn every_property_maps_to_its_schema_name() {', 'let mut entity = Schema::thing();']
-    for node in properties:
+    smoke += ['}']
+    for index, node in enumerate(properties):
+        if index % 50 == 0:
+            if index:
+                smoke += ['}']
+            smoke += ['#[test]', f'fn property_schema_names_{index // 50}() {{', 'let mut entity = Schema::thing();']
         prop = label(node)
         smoke += [f'entity.{snake(prop)}("sentinel");', f'assert_eq!(entity.get_property("{prop}"), Some(serde_json::json!("sentinel")));']
-    smoke += ['}', '#[test]', 'fn every_enumeration_value_is_a_schema_url() {']
+    smoke += ['}']
     constants = 0
     for node in nodes:
         for type_id in many(node.get('@type', [])):
@@ -105,6 +113,10 @@ def generate():
             name = names[type_id]
             url = 'https://schema.org/' + node['@id'].split(':', 1)[1]
             out += [f'impl Entity<types::{name}> {{', f'/// Schema.org enumeration value `{label(node)}`.', f'pub const {constant}: &\'static str = "{url}";', '}']
+            if constants % 50 == 0:
+                if constants:
+                    smoke += ['}']
+                smoke += ['#[test]', f'fn enumeration_schema_urls_{constants // 50}() {{']
             smoke += [f'assert_eq!({name}::{constant}, "{url}");']
             constants += 1
     smoke += ['}']
